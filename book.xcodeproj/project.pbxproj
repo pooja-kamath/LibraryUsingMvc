@@ -21,6 +21,17 @@
 		78D200901920947200990B4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78D200721920947200990B4A /* UIKit.framework */; };
 		78D200981920947200990B4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78D200961920947200990B4A /* InfoPlist.strings */; };
 		78D2009A1920947200990B4A /* bookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D200991920947200990B4A /* bookTests.m */; };
+		78D200A8192094DF00990B4A /* SBBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D200A7192094DF00990B4A /* SBBook.m */; };
+		78D200AC1920958800990B4A /* SBfirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D200AA1920958800990B4A /* SBfirstViewController.m */; };
+		78D200AD1920958800990B4A /* SBfirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D200AB1920958800990B4A /* SBfirstViewController.xib */; };
+		78D200B1192095CC00990B4A /* SBentryFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D200AF192095CC00990B4A /* SBentryFormViewController.m */; };
+		78D200B2192095CC00990B4A /* SBentryFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D200B0192095CC00990B4A /* SBentryFormViewController.xib */; };
+		78D200B61920989A00990B4A /* SBBookListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D200B41920989A00990B4A /* SBBookListViewController.m */; };
+		78D200B71920989A00990B4A /* SBBookListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D200B51920989A00990B4A /* SBBookListViewController.xib */; };
+		78D200BB192099BF00990B4A /* SBBookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D200B9192099BF00990B4A /* SBBookDetailViewController.m */; };
+		78D200BC192099BF00990B4A /* SBBookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78D200BA192099BF00990B4A /* SBBookDetailViewController.xib */; };
+		78D200BF1920A28D00990B4A /* SBBookManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D200BE1920A28D00990B4A /* SBBookManagerViewController.m */; };
+		78D200C91920DBC400990B4A /* stack-of-books.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78D200C81920DBC400990B4A /* stack-of-books.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +64,23 @@
 		78D200951920947200990B4A /* bookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "bookTests-Info.plist"; sourceTree = "<group>"; };
 		78D200971920947200990B4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78D200991920947200990B4A /* bookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bookTests.m; sourceTree = "<group>"; };
+		78D200A6192094DF00990B4A /* SBBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBook.h; sourceTree = "<group>"; };
+		78D200A7192094DF00990B4A /* SBBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBook.m; sourceTree = "<group>"; };
+		78D200A91920958800990B4A /* SBfirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBfirstViewController.h; sourceTree = "<group>"; };
+		78D200AA1920958800990B4A /* SBfirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBfirstViewController.m; sourceTree = "<group>"; };
+		78D200AB1920958800990B4A /* SBfirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBfirstViewController.xib; sourceTree = "<group>"; };
+		78D200AE192095CC00990B4A /* SBentryFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBentryFormViewController.h; sourceTree = "<group>"; };
+		78D200AF192095CC00990B4A /* SBentryFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBentryFormViewController.m; sourceTree = "<group>"; };
+		78D200B0192095CC00990B4A /* SBentryFormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBentryFormViewController.xib; sourceTree = "<group>"; };
+		78D200B31920989A00990B4A /* SBBookListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookListViewController.h; sourceTree = "<group>"; };
+		78D200B41920989A00990B4A /* SBBookListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookListViewController.m; sourceTree = "<group>"; };
+		78D200B51920989A00990B4A /* SBBookListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBBookListViewController.xib; sourceTree = "<group>"; };
+		78D200B8192099BF00990B4A /* SBBookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookDetailViewController.h; sourceTree = "<group>"; };
+		78D200B9192099BF00990B4A /* SBBookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookDetailViewController.m; sourceTree = "<group>"; };
+		78D200BA192099BF00990B4A /* SBBookDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBBookDetailViewController.xib; sourceTree = "<group>"; };
+		78D200BD1920A28D00990B4A /* SBBookManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBookManagerViewController.h; sourceTree = "<group>"; };
+		78D200BE1920A28D00990B4A /* SBBookManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBookManagerViewController.m; sourceTree = "<group>"; };
+		78D200C81920DBC400990B4A /* stack-of-books.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stack-of-books.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +140,9 @@
 		78D200741920947200990B4A /* book */ = {
 			isa = PBXGroup;
 			children = (
+				78D200A5192094A900990B4A /* model */,
+				78D200A41920948A00990B4A /* view */,
+				78D200A31920947E00990B4A /* controller */,
 				78D2007D1920947200990B4A /* SBAppDelegate.h */,
 				78D2007E1920947200990B4A /* SBAppDelegate.m */,
 				78D200801920947200990B4A /* Main.storyboard */,
@@ -126,6 +157,7 @@
 		78D200751920947200990B4A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				78D200C81920DBC400990B4A /* stack-of-books.jpg */,
 				78D200761920947200990B4A /* book-Info.plist */,
 				78D200771920947200990B4A /* InfoPlist.strings */,
 				78D2007A1920947200990B4A /* main.m */,
@@ -150,6 +182,43 @@
 				78D200961920947200990B4A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78D200A31920947E00990B4A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				78D200BD1920A28D00990B4A /* SBBookManagerViewController.h */,
+				78D200BE1920A28D00990B4A /* SBBookManagerViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		78D200A41920948A00990B4A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				78D200A91920958800990B4A /* SBfirstViewController.h */,
+				78D200AA1920958800990B4A /* SBfirstViewController.m */,
+				78D200AB1920958800990B4A /* SBfirstViewController.xib */,
+				78D200AE192095CC00990B4A /* SBentryFormViewController.h */,
+				78D200AF192095CC00990B4A /* SBentryFormViewController.m */,
+				78D200B0192095CC00990B4A /* SBentryFormViewController.xib */,
+				78D200B31920989A00990B4A /* SBBookListViewController.h */,
+				78D200B41920989A00990B4A /* SBBookListViewController.m */,
+				78D200B51920989A00990B4A /* SBBookListViewController.xib */,
+				78D200B8192099BF00990B4A /* SBBookDetailViewController.h */,
+				78D200B9192099BF00990B4A /* SBBookDetailViewController.m */,
+				78D200BA192099BF00990B4A /* SBBookDetailViewController.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		78D200A5192094A900990B4A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				78D200A6192094DF00990B4A /* SBBook.h */,
+				78D200A7192094DF00990B4A /* SBBook.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D200871920947200990B4A /* Images.xcassets in Resources */,
+				78D200B2192095CC00990B4A /* SBentryFormViewController.xib in Resources */,
+				78D200B71920989A00990B4A /* SBBookListViewController.xib in Resources */,
 				78D200791920947200990B4A /* InfoPlist.strings in Resources */,
+				78D200AD1920958800990B4A /* SBfirstViewController.xib in Resources */,
+				78D200C91920DBC400990B4A /* stack-of-books.jpg in Resources */,
+				78D200BC192099BF00990B4A /* SBBookDetailViewController.xib in Resources */,
 				78D200821920947200990B4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,8 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				78D2007B1920947200990B4A /* main.m in Sources */,
+				78D200BB192099BF00990B4A /* SBBookDetailViewController.m in Sources */,
+				78D200BF1920A28D00990B4A /* SBBookManagerViewController.m in Sources */,
 				78D200851920947200990B4A /* SBViewController.m in Sources */,
+				78D200B61920989A00990B4A /* SBBookListViewController.m in Sources */,
+				78D200B1192095CC00990B4A /* SBentryFormViewController.m in Sources */,
 				78D2007F1920947200990B4A /* SBAppDelegate.m in Sources */,
+				78D200AC1920958800990B4A /* SBfirstViewController.m in Sources */,
+				78D200A8192094DF00990B4A /* SBBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
