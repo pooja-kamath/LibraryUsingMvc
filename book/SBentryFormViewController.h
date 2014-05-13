@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 @protocol entryFormDelegate
+
+//delegate method which creates a object of book and adds it to the array
 -(void)addBookwithTitle:(NSString *)title withId:(NSString*)bid withAuthor:(NSString*)author andIssued:(NSString *)issued;
+
 @end
+
 @interface SBentryFormViewController : UIViewController
-@property id delegate;
+
+@property (assign) id delegate;
+-(void)textFieldDidChange;
 @end

@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "SBBookListViewController.h"
 @protocol bookDetailDelegate
--(NSArray *)getBookDetailwithindex:(int)indexpath;
+-(NSArray *)getBookDetailwithindex:(NSIndexPath *)indexpath;
+-(NSIndexPath *)getIndex;
 @end
 
 @interface SBBookDetailViewController : UIViewController
-@property id delegate;
-@property NSArray *detail;
-@property SBBookListViewController *s;
+@property (assign) id delegate;
+@property (assign) NSArray *detail;
+@property (assign) SBBookListViewController *s;
 @end

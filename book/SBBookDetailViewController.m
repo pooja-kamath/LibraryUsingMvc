@@ -10,11 +10,12 @@
 #import "SBBookManagerViewController.h"
 #import "SBBookListViewController.h"
 @interface SBBookDetailViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *bookIdLabel;
-@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
-@property (weak, nonatomic) IBOutlet UILabel *issuedLabel;
+@property (strong) IBOutlet UILabel *titleLabel;
+@property (strong) IBOutlet UILabel *bookIdLabel;
+@property (strong ) IBOutlet UILabel *authorLabel;
+@property (strong )IBOutlet UILabel *issuedLabel;
+@property (retain, nonatomic) IBOutlet UISwitch *swtch;
 
 - (IBAction)okButton:(id)sender;
 @end
@@ -23,17 +24,6 @@
 @synthesize delegate;
 @synthesize detail;
 @synthesize s;
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        
-      
-        
-
-    }
-    return self;
-}
 -(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -52,17 +42,17 @@
     SBBookManagerViewController *sharedManager = [SBBookManagerViewController sharedManager];
     delegate=sharedManager;
     
+    NSIndexPath *indx=[delegate getIndex];
     
-      SBBookListViewController *s=[[SBBookListViewController alloc]init];
-   detail=[delegate getBookDetailwithindex:s.indexValue];
-    NSLog(@" innndx %d",s.indexValue );
+   detail=[delegate getBookDetailwithindex:indx];
+    NSLog(@" innndx %ld",(long)indx.row);
     
     _titleLabel.text=[detail objectAtIndex:0];
     _bookIdLabel.text=[detail objectAtIndex:1];
     _authorLabel.text=[detail objectAtIndex:2];
     _issuedLabel.text=[detail objectAtIndex:3];
     
-    UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed: @"stack-of-books.jpg"]];
+    UIColor *background = [[[UIColor alloc] initWithPatternImage:[UIImage imageNamed: @"stack-of-books.jpg"]]autorelease];
     
     self.view.backgroundColor = background;
     
@@ -78,6 +68,17 @@
 
 - (IBAction)okButton:(id)sender {
     
-    [self.navigationController popViewControllerAnimated:YES];
+   [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)dealloc
+{
+    [_titleLabel release];
+    [_bookIdLabel release];
+    [_authorLabel release];
+    [_issuedLabel release];
+    
+    [s release];
+    [_swtch release];
+    [super dealloc];
 }
 @end

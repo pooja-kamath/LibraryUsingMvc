@@ -7,16 +7,18 @@
 //
 
 #import "SBAppDelegate.h"
-#import "SBfirstViewController.h"
+#import "SBBookListViewController.h"
 
 @implementation SBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    SBfirstViewController *firstView=[[SBfirstViewController alloc ]initWithNibName:@"SBfirstViewController" bundle:nil];
-    UINavigationController *navigationController=[[UINavigationController alloc]initWithRootViewController:firstView];
+    SBBookListViewController *firstView=[[[SBBookListViewController alloc ]initWithNibName:@"SBBookListViewController" bundle:nil]autorelease];
+    UINavigationController *navigationController=[[[UINavigationController alloc]initWithRootViewController:firstView]autorelease];
     self.window.rootViewController=navigationController;
+     
     
+
     
     // Override point for customization after application launch.
     return YES;

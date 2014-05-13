@@ -10,9 +10,14 @@
 
 @interface SBBook : NSObject
 
-@property NSString *title;
-@property NSString *bookId;
-@property NSString *author;
-@property NSString *issued;
+//title of book
+@property (retain) NSString *title;
+
+//id of the book
+@property (retain) NSString *bookId;
+//author of the book
+@property (retain) NSString *author;
+//set to Yes if the book is issued or else set to No
+@property(retain) NSString *issued;
 
 @end

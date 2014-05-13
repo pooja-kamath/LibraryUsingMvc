@@ -12,5 +12,6 @@
 #import "SBBookDetailViewController.h"
 @interface SBBookManagerViewController : UIViewController <entryFormDelegate,listViewDelegate,bookDetailDelegate>
 + (id)sharedManager;
-@property int count;
+@property (assign)int count;
+@property (retain) NSIndexPath *index1;
 @end

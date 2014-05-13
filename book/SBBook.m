@@ -14,5 +14,12 @@
 @synthesize bookId;
 @synthesize author;
 @synthesize issued;
-
+- (void)dealloc
+{
+   [ title release];
+    [ bookId release];
+    [ author release];
+   [ issued release];
+    [super dealloc];
+}
 @end
